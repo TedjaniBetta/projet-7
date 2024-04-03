@@ -1,0 +1,29 @@
+.host{
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    justify-content: flex-end;
+  }
+
+  .host__picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+  .host__name {
+    font-weight: 500;
+    font-size: 18px;
+    color:#FF6060;
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .host__name{
+      font-size: 12px;
+    }
+    .host__picture{
+      width: 32px;
+      height: 32px;
+    }
+  }

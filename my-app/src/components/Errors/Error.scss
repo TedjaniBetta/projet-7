@@ -1,0 +1,43 @@
+.error {
+    display: flex;
+    flex-direction: column;
+}
+.error__heading
+{
+    font-weight: 700;
+    font-size: 288px;
+    text-align: center;
+    color: #FF6060;
+   
+}
+
+.error__paragraph{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    text-align: center;
+    color: #FF6060;
+    padding-bottom: 50px;
+    margin-bottom: 5%;
+}
+
+.error__link
+{
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: center;
+    color: #FF6060;
+    padding-bottom: 50px;
+}
+
+@media all and (min-width: 0px) and (max-width: 768px){
+    .error__heading{
+        font-size : 96px;
+    } 
+    .error__paragraph{
+        font-size: 18px;
+    }
+    .error__link{
+        font-size: 14px;
+    }
+}

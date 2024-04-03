@@ -1,0 +1,66 @@
+.banner{
+    position: relative; /* nécessaire pour utiliser z-index */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px 30px;
+}
+
+.banner::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; left: 0; right: 0; bottom: 0;
+    filter: brightness(70%);
+    z-index: -1; 
+    border-radius: 25px;
+}
+.banner--home{
+    min-height: 225px;
+    margin-bottom: 5%;
+}
+.banner--home::before {
+    background-image: url("../../../public/assets/banner.png"); /* image de fond pour la page home */
+    background-position: center;
+    background-size: cover;    
+  }
+.banner--about{
+    min-height: 225px;
+    margin-bottom: 3%;
+}
+.banner--about::before {
+    background-image: url("../../../public//assets/bannerabout.png"); /* image de fond pour la page about */
+    background-position: center;
+    background-size: cover;    
+}
+
+.banner__txt{
+    font-size: 48px;
+    line-height: 142.6%;
+    color: white;
+    font-weight: 500;
+}
+
+@media all and (min-width: 0px) and (max-width: 768px)
+{
+    .banner__txt{
+        font-size: 24px;
+        line-height: 100%;
+    }
+    .banner::before{
+        border-radius: 10px;
+    }
+    .banner--home {
+        min-height: 111px;
+    }
+    .banner
+    {
+        align-items: flex-start;
+        padding-left: 15px;
+    }
+    .banner>div
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

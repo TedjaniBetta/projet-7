@@ -1,0 +1,79 @@
+.logement__title {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    margin-bottom: 10px;
+}
+
+.logement__location {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    color: #FF6060;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.info-logement-part-2{ 
+    display: flex;
+    gap: 100px;
+    margin-top: 3%;
+}
+
+.flex
+{
+    display: flex;
+    flex-basis: 50%;
+    gap:50px;
+    margin-top: 20px;
+}
+.flex-between
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Media query pour les écrans jusqu'à 768px de largeur */
+@media (max-width: 768px) {
+    /* Affichage en bloc pour la section info-logement-part-2 */
+    .info-logement-part-2 {
+        display: block;
+    } 
+
+    /* Ajout d'un espacement entre les éléments de la classe flex */
+    .flex {
+        flex-wrap: wrap;
+        gap: 20px; /* Ajout d'un espacement de 20px entre les éléments */
+    }
+
+    /* Ajout d'un espacement entre les éléments de la classe flex-between */
+    .flex-between {
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    }
+
+    /* Configuration de la disposition des éléments de la classe flex-reverse */
+    .flex-reverse {
+        display: flex; /* Utilisation de flexbox */
+        justify-content: space-between; /* Espacement équitable entre les éléments */
+        flex-direction: row-reverse; /* Inversion de la direction des éléments */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+        flex-basis: 100%; /* Prend toute la largeur disponible */
+        gap: 10px; /* Ajout d'un espacement de 10px entre les éléments */
+    }
+
+    /* Ajustement de la taille de la police et de l'alignement du texte pour logement__title */
+    .logement__title {
+        font-size: 18px; /* Taille de la police de 18px */
+        text-align: left; /* Alignement du texte à gauche */
+    }
+
+    /* Ajustement de la taille de la police et de la marge inférieure pour logement__location */
+    .logement__location {
+        font-size: 14px; /* Taille de la police de 14px */
+        margin-bottom: 10px; /* Marge inférieure de 10px */
+    }
+}
